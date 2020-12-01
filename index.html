@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	</head>
+	<body>
+		<table>
+			<thead>
+				<td>API Name </td>
+				<td>Description </td>
+				<td>*BLANK* </td>
+			</thead>
+			<tr>
+				<td>Neighbours </td>
+			<!-- Country selector -->
+				<td>
+					<select id="country">
+						<option value="GB">Great Britain</option>
+						<option value="USA">USA</option>
+						<option value="DE">Germany</option>
+					</select>
+				</td>			
+			<!-- Button 1 submit-->
+				<td> <button id="btnRun">Submit</button> </td>
+			</tr>
+			<tr>
+				<td>WikiSearch </td>
+			<!-- Place selector -->
+				<td>
+					<select id="place">
+						<option value="London">London</option>
+						<option value="New%20York">New York</option>
+						<option value="Berlin">Berlin</option>
+					</select>
+				</td>			
+			<!-- Button 2 submit-->
+				<td> <button id="btnRun2">Submit</button> </td>
+			</tr>
+			<tr>
+				<td>Search </td>
+			<!-- Place selector -->
+				<td>
+					<select id="city">
+						<option value="London">London</option>
+						<option value="New%20York">New York</option>
+						<option value="Berlin">Berlin</option>
+					</select>
+				</td>			
+			<!-- Button 3 submit-->
+				<td> <button id="btnRun3">Submit</button> </td>
+			</tr>
+		</table>
+		<br><br>
+		
+		<div id="divResults">
+			<!--API: Neighbours results table -->
+			<table>
+				<thead>
+					<td>API: Neighbours</td>
+					<td>API Results:</td>
+				</thead>
+				<tr>
+					<td>Name: </td>
+					<td id="name"></td>
+				</tr>
+				<tr>
+					<td>Name: </td>
+					<td id="countryCode"></td>
+				</tr>
+				<tr>
+					<td>Country Code: </td>
+					<td id="geonameId"></td>
+				</tr>
+				<tr>
+					<td>Geo Name ID: </td>
+					<td id="population"></td>
+				</tr>
+			</table>
+			<br><br>
+			<!--API: WikiSearch results table -->
+			<table>
+				<thead>
+					<td>API: WikiSearch</td>
+					<td>API Results:</td>
+				</thead>
+				<tr>
+					<td>Summary</td>
+					<td id="summary"></td>
+				</tr>
+				<tr>
+					<td>Country Code</td>
+					<td id="countryCode2"></td>
+				</tr>
+				<tr>
+					<td>Title</td>
+					<td id="title"></td>
+				</tr>
+				<tr>
+					<td>Image link:</td>
+					<td id="thumbnailImg"></td>
+				</tr>
+			</table>
+			<br><br>
+			<!--API: Search results table -->
+			<table>
+				<thead>
+					<td>API: Search</td>
+					<td>API Results:</td>
+				</thead>
+				<tr>
+					<td>Continent Code: </td>
+					<td id="continentCode"></td>
+				</tr>
+				<tr>
+					<td>Code: </td>
+					<td id="adminCode1"></td>
+				</tr>
+				<tr>
+					<td>Population: </td>
+					<td id="population3"></td>
+				</tr>
+				<tr>
+					<td>Toponym Name: </td>
+					<td id="toponymName"></td>
+				</tr>
+			</table>
+		</div>
+		
+		<script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+		<script type="application/javascript" src="libs/js/script.js"></script>
+	</body>
+</html>
